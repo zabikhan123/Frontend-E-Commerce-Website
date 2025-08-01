@@ -3,17 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Frontend E-Commerce Website</title>
+  <title>ULEARNA Store</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
   <!-- ✅ Header -->
-
   <header class="header">
-    <div class="container">
-      <h1 class="logo"><a href="#home">ULEARNA STORE</a></h1>
+    <div class="container header-content">
+
+      <!-- Logo -->
+      <h1 class="logo">
+        <a href="#home">ULEARNA STORE</a>
+      </h1>
+
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input type="text" placeholder="Search products..." />
+        <button type="submit">🔍</button>
+      </div>
+
+      <!-- Navigation -->
       <nav class="nav">
         <ul>
           <li><a href="#home" class="active">Home</a></li>
@@ -25,27 +35,30 @@
           </li>
         </ul>
       </nav>
+
     </div>
   </header>
 
-  <!-- ✅ Home Section -->
+  <!-- ✅ Hero / Home Section -->
 
-   <section id="home" class="hero">
+  <section id="home" class="hero">
     <div class="home-content">
       <h2>Welcome to Ulearna Store</h2>
-      <p>Discover your next favorite product in no time.<br>
-         Our curated collection makes it easy to find , simple, and satisfying.</p>
-     
+      <p>
+        Discover your next favorite product in no time.<br>
+        Our curated collection makes it easy to find, simple, and satisfying.
+      </p>
       <a href="#shop" class="btn">Shop Now</a>
     </div>
   </section>
 
   <!-- ✅ Shop Section -->
 
-   <section id="shop" class="featured">
+  <section id="shop" class="featured">
     <div class="container">
       <h2>Our Products</h2>
       <div class="product-grid">
+
         <!-- Product Cards -->
         <div class="product-card">
           <img src="./assite/imgs/products/f1.jpg" alt="Product 1" />
@@ -53,112 +66,133 @@
           <p>$19.99</p>
           <button class="add-to-cart">Add to Cart</button>
         </div>
+
         <div class="product-card">
           <img src="./assite/imgs/products/f2.jpg" alt="Product 2" />
           <h3>Product ID2</h3>
           <p>$24.99</p>
           <button class="add-to-cart">Add to Cart</button>
         </div>
+
         <div class="product-card">
           <img src="./assite/imgs/products/f3.jpg" alt="Product 3" />
           <h3>Product ID3</h3>
           <p>$29.99</p>
           <button class="add-to-cart">Add to Cart</button>
         </div>
-         <div class="product-card">
-          <img src="./assite/imgs/products/n4.jpg" alt="Product 3" />
+
+        <div class="product-card">
+          <img src="./assite/imgs/products/n4.jpg" alt="Product 4" />
           <h3>Product ID4</h3>
           <p>$35.22</p>
           <button class="add-to-cart">Add to Cart</button>
         </div>
+
         <div class="product-card">
-          <img src="./assite/imgs/products/n6.jpg" alt="Product 3" />
+          <img src="./assite/imgs/products/n6.jpg" alt="Product 5" />
           <h3>Product ID5</h3>
           <p>$29.99</p>
           <button class="add-to-cart">Add to Cart</button>
         </div>
+
         <div class="product-card">
-          <img src="./assite/imgs/products/f6.jpg" alt="Product 3" />
+          <img src="./assite/imgs/products/f6.jpg" alt="Product 6" />
           <h3>Product ID6</h3>
-          <p>$33</p>
+          <p>$33.00</p>
           <button class="add-to-cart">Add to Cart</button>
         </div>
+
         <div class="product-card">
-          <img src="./assite/imgs/products/n8.jpg" alt="Product 3" />
+          <img src="./assite/imgs/products/n8.jpg" alt="Product 7" />
           <h3>Product ID7</h3>
-          <p>$24</p>
+          <p>$24.00</p>
           <button class="add-to-cart">Add to Cart</button>
-        </div><div class="product-card">
-          <img src="./assite/imgs/products/n7.jpg" alt="Product 3" />
+        </div>
+
+        <div class="product-card">
+          <img src="./assite/imgs/products/n7.jpg" alt="Product 8" />
           <h3>Product ID8</h3>
-          <p>$39</p>
+          <p>$39.00</p>
           <button class="add-to-cart">Add to Cart</button>
-        </div><div class="product-card">
-          <img src="./assite/imgs/products/n5.jpg" alt="Product 3" />
+        </div>
+
+        <div class="product-card">
+          <img src="./assite/imgs/products/n5.jpg" alt="Product 9" />
           <h3>Product ID9</h3>
-          <p>$21</p>
+          <p>$21.00</p>
           <button class="add-to-cart">Add to Cart</button>
-        </div><div class="product-card">
-          <img src="./assite/imgs/products/f7.jpg" alt="Product 3" />
+        </div>
+
+        <div class="product-card">
+          <img src="./assite/imgs/products/f7.jpg" alt="Product 10" />
           <h3>Product ID10</h3>
-          <p>$17</p>
+          <p>$17.00</p>
           <button class="add-to-cart">Add to Cart</button>
-        </div><div class="product-card">
-          <img src="./assite/imgs/products/n1.jpg" alt="Product 3" />
+        </div>
+
+        <div class="product-card">
+          <img src="./assite/imgs/products/n1.jpg" alt="Product 11" />
           <h3>Product ID11</h3>
           <p>$22.99</p>
           <button class="add-to-cart">Add to Cart</button>
-        </div><div class="product-card">
-          <img src="./assite/imgs/products/f8.jpg" alt="Product 3" />
+        </div>
+
+        <div class="product-card">
+          <img src="./assite/imgs/products/f8.jpg" alt="Product 12" />
           <h3>Product ID12</h3>
-          <p>$23</p>
+          <p>$23.00</p>
           <button class="add-to-cart">Add to Cart</button>
         </div>
+
       </div>
     </div>
-  </section> 
+  </section>
 
- <!-- ✅ About Section -->
+  <!-- ✅ About Section -->
+   
+  <section id="about">
+    <div class="container about-content">
+      <div class="about-text">
+        <h2>About Ulearna Store</h2>
+        <p>
+          We believe shopping should be simple, stylish, and affordable.
+          At Ulearna Store, we carefully select high-quality products that make your life easier and better.
+          "At Ulearna Store, shopping isn't just easy — it's effortless, elegant, and empowering."
+"We don’t just sell products — we deliver lifestyle upgrades that are practical, stylish, and budget-friendly."
 
- <section id="about">
-   <div class="container about-content">
-     <div class="about-text">
-      <h2>About Ulearna Store</h2>
-       <p>
-        We believe shopping should be simple, stylish, and affordable. 
-        At MyStore, we carefully select high-quality products that make your life easier and better.
-       </p>
+"Our goal is simple: high-quality, handpicked products that make everyday life more joyful."
+
+"We believe good design should be accessible to everyone — that’s why we combine quality with affordability."
+        </p>
       </div>
-     <div class="about-images">
-      <img src="./assite/imgs/about/a1.png" alt="About 1">
-      <img src="./assite/imgs/about/a2.jpg" alt="About 2">
-      <img src="./assite/imgs/about/a3.png" alt="About 3">
+      <div class="about-images">
+        <img src="./assite/imgs/about/a1.png" alt="About 1" />
+        <img src="./assite/imgs/about/a2.jpg" alt="About 2" />
+        <img src="./assite/imgs/about/a3.png" alt="About 3" />
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- ✅ Contact Section -->
 
-   <section id="contact" class="featured">
-      <div class="container">
-          <h2>Contact Us</h2>
-       <form>
-           <input type="text" placeholder="Your Name" required /><br><br>
-           <input type="email" placeholder="Your Email" required /><br><br>
-           <textarea placeholder="Your Message" rows="5" required></textarea><br><br>
-           <button type="submit" class="submit">Send Message</button>
-       </form>
-     </div> 
-  </section> 
+  <section id="contact" class="featured">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required /><br><br>
+        <input type="email" placeholder="Your Email" required /><br><br>
+        <textarea placeholder="Your Message" rows="5" required></textarea><br><br>
+        <button type="submit" class="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
   <!-- ✅ Cart Section -->
 
   <section id="cart" class="featured">
     <div class="container">
-         <h2>Your Cart</h2>
-         <p>No items in cart yet.</p> 
-          <!-- Future JS can dynamically populate items here  -->
-
+      <h2>Your Cart</h2>
+      <p>No items in cart yet.</p>
     </div>
   </section>
 
@@ -166,9 +200,9 @@
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 MyStore. All rights reserved.</p>
+      <p>&copy; 2025 Ulearna Store. All rights reserved.</p>
     </div>
-  </footer> 
+  </footer>
 
   <script src="script.js"></script>
 </body>

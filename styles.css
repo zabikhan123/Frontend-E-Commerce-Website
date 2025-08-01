@@ -30,9 +30,15 @@ img {
 
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
   background-color: #222;
   color: #fff;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .header .container {
@@ -45,7 +51,7 @@ img {
 .logo a {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #f4b400;
+  color: aqua;
 }
 
 .nav ul {
@@ -56,20 +62,22 @@ img {
 }
 
 .nav a {
-  color: #fff;
+  color: aqua;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.nav a:hover,
-.nav a.active {
-  color: #f4b400;
-  border-bottom: 2px solid #f4b400 ;
+.nav a:hover {
+  color: aqua;
+  border-bottom: 2px solid aqua;
+  box-shadow: 0 10px 20px aqua;
+  background-color: none;
+  
 }
 
 .hero {
   background: url("./assite/imgs/hero\ pic.png") center/cover no-repeat;
-  min-height: 97vh;
+  min-height: 100vh;
   display: flex;
   color: #fff;
   position: relative;
@@ -83,7 +91,7 @@ img {
   z-index: 0;
 }
 .home-content {
-  margin-top: 4rem;
+  margin-top: 5rem;
   margin-left: 6rem;
   z-index: 100;
   }
@@ -97,7 +105,7 @@ img {
 }
 .btn {
   display: inline-block;
-  background: #f4b400;
+  background: aquamarine;
   color: #222;
   padding: 0.7rem 5rem;
   margin-left: 8rem;
@@ -109,7 +117,7 @@ img {
 }
 .submit{
   display: inline-block;
-  background: #f4b400;
+  background: aqua;
   color: #222;
   padding: 0.7rem 3rem;
   font-weight: bold;
@@ -120,10 +128,12 @@ img {
 }
 
 .btn:hover {
-  background: #d39e00;
+  background: aqua;
+  box-shadow: 0 2px 5px aqua;
 }
 .submit:hover {
-  background: #d39e00;
+  background: aqua;
+  box-shadow: 0 2px 4px aqua;
 }
 
 section {
@@ -182,6 +192,7 @@ section h2 {
   #about {
   background-color: #fff8e1;
   padding: 3rem 1rem;
+  height: 70vh;
 }
 
 .about-content {

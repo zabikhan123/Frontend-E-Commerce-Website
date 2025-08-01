@@ -118,7 +118,7 @@ img {
   border: none;
   cursor: pointer;
 }
-/*
+
 .btn:hover {
   background: #d39e00;
 }
@@ -178,6 +178,7 @@ section h2 {
 .add-to-cart:hover {
   background: #444;
 }
+  /*
   #about {
   background-color: #fff8e1;
   padding: 3rem 1rem;

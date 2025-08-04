@@ -86,9 +86,30 @@ button,
   cursor: pointer;
   transition: background 0.3s;
 }
-.shope{
-  margin-top: 5rem;
+main{
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
 }
+
+.shop-now{
+  /* margin-top: 2rem; */
+  padding: 0.3rem;
+  border-radius: 5px;
+  background-color: #3562938e;
+}
+.shop-now:hover{
+  border-radius: 5px;
+  padding: 0.3rem;
+  background-color: #28318279;
+}
+
+/* shop {
+  margin-top: 5rem; */
+  /* margin-left: 2rem; */
+  /* justify-content:center;
+  align-items: center; */
+/* } */
 button:hover,
 .btn:hover {
   background: #3562938e;
@@ -103,9 +124,9 @@ button:hover,
 /* Hero section */
 
 .hero {
-  height: 90vh;
+  height: 20vh;
   background: #e0f7fa;
-  padding: 3rem 1rem;
+  /* padding: 3rem 1rem; */
   text-align: center;
 }
 .home-content h2 {

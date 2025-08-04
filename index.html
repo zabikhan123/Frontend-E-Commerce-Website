@@ -7,201 +7,87 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- ✅ Header -->
   <header class="header">
     <div class="container header-content">
-
-      <!-- Logo -->
-      <h1 class="logo">
-        <a href="#home">ULEARNA STORE</a>
-      </h1>
-
-      <!-- Search Bar -->
-      <div class="search-bar">
-        <input type="text" placeholder="Search products..." />
-        <button type="submit">🔍</button>
-      </div>
-
-      <!-- Navigation -->
+      <div class="logo"><a href="#">ULEARNA</a></div>
       <nav class="nav">
         <ul>
-          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#shop">Shop</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li class="cart-link">
-            <a href="#cart">🛍️ <span id="cart-count">0</span></a>
-          </li>
+          <li><a href="#cart" class="cart-link">🛒 Cart (<span id="cart-count">0</span>)</a></li>
         </ul>
       </nav>
-
+      <div class="search-bar">
+        <input type="text" placeholder="Search products..." />
+        <button>🔍</button>
+      </div>
+      <button id="dark-mode-toggle" class="submit">🌙 Dark Mode</button>
     </div>
   </header>
 
-  <!-- ✅ Hero / Home Section -->
 
-  <section id="home" class="hero">
-    <div class="home-content">
-      <h2>Welcome to Ulearna Store</h2>
+
+
+
+
+
+
+  <main>
+
+
+    <section class="hero" id="home">
+      <div class="home-content">
+        <h2>Welcome to ULEARNA Store</h2>
+        <p>Shop the best products at the best price. We focus on quality, value, and fast delivery, making your shopping experience smooth and secure.<br>
+      Start your journey with us today and discover the smarter way to shop online.</p>
+        <a href="#shop" class="btn shope">Shop Now</a>
+      </div>
+    </section>
+
+
+    <section id="shop">
+      <h2>Shop</h2>
+      <div class="product-grid" id="product-list"></div>
+    </section>
+
+
+
+    <section class="about-section">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="./assite/imgs/about/a6.jpg" alt="About Us Image">
+       <img src="./assite/imgs/about/a5.jpg" alt="About Us Image">
+    </div>
+    <div class="about-text">
+      <h2>About ULEARNA Store</h2>
       <p>
-        Discover your next favorite product in no time.<br>
-        Our curated collection makes it easy to find, simple, and satisfying.
+        ULEARNA Store is a trusted e-commerce platform offering the best tools, gadgets, and accessories for learners and tech lovers.
       </p>
-      <a href="#shop" class="btn">Shop Now</a>
+      <p>
+        Our mission is to empower people with affordable, high-quality products and a smooth online shopping experience.
+      </p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ✅ Shop Section -->
 
-  <section id="shop" class="featured">
-    <div class="container">
-      <h2>Our Products</h2>
-      <div class="product-grid">
 
-        <!-- Product Cards -->
-        <div class="product-card">
-          <img src="./assite/imgs/products/f1.jpg" alt="Product 1" />
-          <h3>Product ID1</h3>
-          <p>$19.99</p>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="./assite/imgs/products/f2.jpg" alt="Product 2" />
-          <h3>Product ID2</h3>
-          <p>$24.99</p>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="./assite/imgs/products/f3.jpg" alt="Product 3" />
-          <h3>Product ID3</h3>
-          <p>$29.99</p>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="./assite/imgs/products/n4.jpg" alt="Product 4" />
-          <h3>Product ID4</h3>
-          <p>$35.22</p>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="./assite/imgs/products/n6.jpg" alt="Product 5" />
-          <h3>Product ID5</h3>
-          <p>$29.99</p>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="./assite/imgs/products/f6.jpg" alt="Product 6" />
-          <h3>Product ID6</h3>
-          <p>$33.00</p>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="./assite/imgs/products/n8.jpg" alt="Product 7" />
-          <h3>Product ID7</h3>
-          <p>$24.00</p>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="./assite/imgs/products/n7.jpg" alt="Product 8" />
-          <h3>Product ID8</h3>
-          <p>$39.00</p>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="./assite/imgs/products/n5.jpg" alt="Product 9" />
-          <h3>Product ID9</h3>
-          <p>$21.00</p>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="./assite/imgs/products/f7.jpg" alt="Product 10" />
-          <h3>Product ID10</h3>
-          <p>$17.00</p>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="./assite/imgs/products/n1.jpg" alt="Product 11" />
-          <h3>Product ID11</h3>
-          <p>$22.99</p>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="./assite/imgs/products/f8.jpg" alt="Product 12" />
-          <h3>Product ID12</h3>
-          <p>$23.00</p>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ✅ About Section -->
-   
-  <section id="about">
-    <div class="container about-content">
-      <div class="about-text">
-        <h2>About Ulearna Store</h2>
-        <p>
-          We believe shopping should be simple, stylish, and affordable.
-          At Ulearna Store, we carefully select high-quality products that make your life easier and better.
-          "At Ulearna Store, shopping isn't just easy — it's effortless, elegant, and empowering."
-"We don’t just sell products — we deliver lifestyle upgrades that are practical, stylish, and budget-friendly."
-
-"Our goal is simple: high-quality, handpicked products that make everyday life more joyful."
-
-"We believe good design should be accessible to everyone — that’s why we combine quality with affordability."
-        </p>
-      </div>
-      <div class="about-images">
-        <img src="./assite/imgs/about/a1.png" alt="About 1" />
-        <img src="./assite/imgs/about/a2.jpg" alt="About 2" />
-        <img src="./assite/imgs/about/a3.png" alt="About 3" />
-      </div>
-    </div>
-  </section>
-
-  <!-- ✅ Contact Section -->
-
-  <section id="contact" class="featured">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required /><br><br>
-        <input type="email" placeholder="Your Email" required /><br><br>
-        <textarea placeholder="Your Message" rows="5" required></textarea><br><br>
-        <button type="submit" class="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- ✅ Cart Section -->
-
-  <section id="cart" class="featured">
-    <div class="container">
+    <section id="cart">
       <h2>Your Cart</h2>
-      <p>No items in cart yet.</p>
-    </div>
-  </section>
+      <div id="cart-items"></div>
+    </section>
 
-  <!-- ✅ Footer -->
+
+  </main>
+
+
+
+
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Ulearna Store. All rights reserved.</p>
-    </div>
+    <p>&copy; 2025 ULEARNA Store</p>
   </footer>
 
   <script src="script.js"></script>

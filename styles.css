@@ -25,6 +25,11 @@ body {
   background: #333;
   color: #fff;
 }
+
+.header h1 {
+  font-size: 24px;
+  margin-right: 5rem;
+}
 .header-content {
   display: flex;
   align-items: center;
@@ -47,6 +52,7 @@ body {
 }
 .cart-icon {
   font-size: 18px;
+  margin-left: 4rem;
 }
 /* Navbar Styling */
 .nav-links {

@@ -11,6 +11,15 @@
   <header class="header">
     <div class="container header-content">
       <h1>ULEARNA</h1>
+
+      <!-- ✅ Navigation Links -->
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
       <input type="text" class="search-input" placeholder="Search products..." />
       <button id="dark-mode-toggle" class="toggle-btn">🌙 Dark Mode</button>
       <div class="cart-icon">🛒 <span id="cart-count">0</span></div>
@@ -31,23 +40,82 @@
     </div>
   </section>
 
-
-
-  
   <!-- 🛍️ Shop Section -->
+
   <section id="shop" class="shop-section">
     <h2>Our Products</h2>
     <div id="product-list" class="product-grid"></div>
   </section>
 
 
+ 
 
 
-  <!-- 🧺 Cart Section -->
-  <section id="cart" class="cart-section">
-    <h2>Your Cart</h2>
-    <div id="cart-items"></div>
-  </section>
+  <!-- 👤 About Section -->
+
+ <section id="about" class="about-section">
+   <h1>About Us</h1>
+  <div class="about-container">
+    <img src="./assite/imgs/about/a6.jpg" alt="About Us" class="about-img" />
+    <!-- <img src="./assite/imgs/about/a5.jpg" alt="About Us" class="about-img" /> -->
+    <div class="about-text">
+     
+      <h2>About ULEARNA Store</h2>
+      <p>
+  Welcome to ULEARNA — your one-stop shop for stylish and affordable fashion. 
+  We’re committed to quality, comfort, and the latest trends. Whether you're searching for everyday essentials or standout pieces for special occasions, our carefully curated collections are designed to elevate your wardrobe. 
+  At ULEARNA, we believe fashion should empower you, express your individuality, and fit your lifestyle without compromising on value. 
+  Our team works hard to bring you fresh designs, durable materials, and a seamless online shopping experience. 
+  Thank you for choosing us as your fashion destination.
+</p>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- 📞 Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feedback, or collaboration ideas — we'd love to hear from you!</p>
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="Subject" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+ 
+<!-- 🛒 Cart Section -->
+<section id="cart" class="cart-section">
+  <h2>Your Shopping Cart</h2>
+  <div id="cart-items">
+    <!-- Items will be rendered here via JavaScript -->
+  </div>
+</section>
+
+  
+
 
   <script src="script.js"></script>
 </body>

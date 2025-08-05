@@ -4,34 +4,31 @@ document.addEventListener("DOMContentLoaded", () => {
     { id: 2, name: "Headphones", price: 199.99, img: "assite/imgs/products/f2.jpg" },
     { id: 3, name: "Keyboard", price: 89.99, img: "assite/imgs/products/f3.jpg" },
     { id: 4, name: "Mouse", price: 49.99, img: "assite/imgs/products/f4.jpg" },
-    { id: 5, name: "Laptop", price: 999.99, img: "assite/imgs/products/f5.jpg" },
-    { id: 6, name: "Headphones", price: 199.99, img: "assite/imgs/products/f6.jpg" },
-    { id: 7, name: "Keyboard", price: 89.99, img: "assite/imgs/products/f7.jpg" },
-    { id: 8, name: "Mouse", price: 49.99, img: "assite/imgs/products/f8.jpg" }, 
-    { id: 9, name: "Laptop", price: 999.99, img: "assite/imgs/products/n1.jpg" },
-    { id: 10, name: "Headphones", price: 199.99, img: "assite/imgs/products/n2.jpg" },
-    { id: 11, name: "Keyboard", price: 89.99, img: "assite/imgs/products/n3.jpg" },
-    { id: 12, name: "Mouse", price: 49.99, img: "assite/imgs/products/n4.jpg" },
-    { id: 10, name: "Headphones", price: 199.99, img: "assite/imgs/products/n5.jpg" },
-    { id: 11, name: "Keyboard", price: 89.99, img: "assite/imgs/products/n6.jpg" },
-    { id: 12, name: "Mouse", price: 49.99, img: "assite/imgs/products/n7.jpg" },
-    { id: 12, name: "Mouse", price: 49.99, img: "assite/imgs/products/n8.jpg" },
-
-    // { id: 10, name: "Headphones", price: 199.99, img: "assite/imgs/products/n2.jpg" },
-   //  { id: 11, name: "Keyboard", price: 89.99, img: "assite/imgs/products/n3.jpg" },
-    // { id: 12, name: "Mouse", price: 49.99, img: "assite/imgs/products/n4.jpg" },
+    { id: 1, name: "Laptop", price: 999.99, img: "assite/imgs/products/f5.jpg" },
+    { id: 2, name: "Headphones", price: 199.99, img: "assite/imgs/products/f6.jpg" },
+    { id: 3, name: "Keyboard", price: 89.99, img: "assite/imgs/products/f7.jpg" },
+    { id: 4, name: "Mouse", price: 49.99, img: "assite/imgs/products/f8.jpg" },
+    { id: 1, name: "Laptop", price: 999.99, img: "assite/imgs/products/n1.jpg" },
+    { id: 2, name: "Headphones", price: 199.99, img: "assite/imgs/products/n2.jpg" },
+    { id: 3, name: "Keyboard", price: 89.99, img: "assite/imgs/products/n3.jpg" },
+    { id: 4, name: "Mouse", price: 49.99, img: "assite/imgs/products/n4.jpg" },
+    { id: 1, name: "Laptop", price: 999.99, img: "assite/imgs/products/n5.jpg" },
+    { id: 2, name: "Headphones", price: 199.99, img: "assite/imgs/products/n6.jpg" },
+    { id: 3, name: "Keyboard", price: 89.99, img: "assite/imgs/products/n7.jpg" },
+    { id: 4, name: "Mouse", price: 49.99, img: "assite/imgs/products/n8.jpg" },
   ];
 
   const productList = document.getElementById("product-list");
   const cartCount = document.getElementById("cart-count");
   const cartItems = document.getElementById("cart-items");
-  const searchInput = document.querySelector(".search-bar input");
+  const searchInput = document.querySelector(".search-input");
   const toggle = document.getElementById("dark-mode-toggle");
 
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  renderProducts();
   updateCartUI();
 
-  // Render products
   function renderProducts() {
     productList.innerHTML = "";
     products.forEach(prod => {
@@ -40,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       card.innerHTML = `
         <img src="${prod.img}" alt="${prod.name}" />
         <h3>${prod.name}</h3>
+        <div class="star-rating">★★★★★</div>
         <p>$${prod.price.toFixed(2)}</p>
         <button class="add-to-cart" data-id="${prod.id}">Add to Cart</button>
       `;
@@ -47,9 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  renderProducts();
-
-  // Add to cart
   productList.addEventListener("click", e => {
     if (e.target.classList.contains("add-to-cart")) {
       const id = +e.target.dataset.id;
@@ -59,7 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Update cart UI
   function updateCartUI() {
     cartCount.textContent = cart.length;
     cartItems.innerHTML = "";
@@ -97,7 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
     cartItems.appendChild(clearBtn);
   }
 
-  // Search
   searchInput.addEventListener("input", () => {
     const val = searchInput.value.toLowerCase();
     const cards = document.querySelectorAll(".product-card");
@@ -107,7 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Dark mode toggle
   toggle.onclick = () => {
     document.body.classList.toggle("dark");
     toggle.textContent = document.body.classList.contains("dark")

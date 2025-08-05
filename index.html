@@ -8,86 +8,46 @@
 </head>
 <body>
 
-
-
   <header class="header">
     <div class="container header-content">
-      <div class="logo"><a href="#">ULEARNA</a></div>
-      <nav class="nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#shop">Shop</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#cart" class="cart-link">🛒 Cart (<span id="cart-count">0</span>)</a></li>
-        </ul>
-      </nav>
-      <div class="search-bar">
-        <input type="text" placeholder="Search products..." />
-        <button>🔍</button>
-      </div>
-      <button id="dark-mode-toggle" class="submit">🌙 Dark Mode</button>
+      <h1>ULEARNA</h1>
+      <input type="text" class="search-input" placeholder="Search products..." />
+      <button id="dark-mode-toggle" class="toggle-btn">🌙 Dark Mode</button>
+      <div class="cart-icon">🛒 <span id="cart-count">0</span></div>
     </div>
   </header>
 
-
-
-  <main>
-
-
-    <section class="hero" id="home">
-      <div class="home-content">
+  <!-- 🌟 Home Section -->
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <div class="home-text">
         <h2>Welcome to ULEARNA Store</h2>
-        <p>Shop the best products at the best price. We focus on quality, value, and fast delivery, making your shopping experience smooth and secure.<br>
-      Start your journey with us today and discover the smarter way to shop online.</p>
-        <a href="#shop" class="shop-now">Shop Now</a>
+        <p>Add your store description here. Explain what makes your store unique and why customers should shop here.</p>
+        <a href="#shop" class="shop-now-btn">Shop Now</a>
       </div>
-    </section>
-
-
-    <section id="shop">
-      <h2>Shop</h2>
-      <div class="product-grid" id="product-list"></div>
-    </section>
-
-
-
-    <section id="about" class="about-section">
-  <div class="about-container">
-    <div class="about-image">
-      <img src="./assite/imgs/about/a6.jpg" alt="About Us Image">
-       <img src="./assite/imgs/about/a5.jpg" alt="About Us Image">
+      <div class="home-image">
+        <img src="./assite/low-angle-young-women-shoppings.png" alt="Hero Image" />
+      </div>
     </div>
-    <div class="about-text">
-
-      <h2>About ULEARNA Store.</h2>
-      <p>
-        ULEARNA Store is a trusted e-commerce platform offering the best tools, gadgets, and accessories for learners and tech lovers.
-      </p>
-      <p>
-        Our mission is to empower people with affordable, high-quality products and a smooth online shopping experience.
-      </p>
-    </div>
-  </div>
-</section>
+  </section>
 
 
 
-    <section id="cart">
-      <h2>Your Cart</h2>
-      <div id="cart-items"></div>
-    </section>
-
-
-  </main>
+  
+  <!-- 🛍️ Shop Section -->
+  <section id="shop" class="shop-section">
+    <h2>Our Products</h2>
+    <div id="product-list" class="product-grid"></div>
+  </section>
 
 
 
 
-
-  <footer class="footer">
-    <p>&copy; 2025 ULEARNA Store</p>
-  </footer>
+  <!-- 🧺 Cart Section -->
+  <section id="cart" class="cart-section">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+  </section>
 
   <script src="script.js"></script>
 </body>

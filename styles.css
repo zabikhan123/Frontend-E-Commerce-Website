@@ -380,6 +380,21 @@ body.dark .contact-form .submit:hover {
   background-color: #e64545;
 }
 
+
+/* footer section  */
+.simple-footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #222;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.simple-footer p {
+  margin: 0;
+}
+
+
 /* Dark Mode */
 body.dark .cart-section {
   background-color: #222;
